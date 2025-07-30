@@ -21,5 +21,28 @@
         "isProgrammer": true
       }
     ]
+  },
+  {
+    "key": "user_id_2",
+    "name": "Jane Doe",
+    "age": 28,
+    "isProgrammer": true,
+    "skills": [
+      "Python",
+      "Django",
+      "Machine Learning"
+    ],
+    "friends": [
+      {
+        "name": "Charlie",
+        "age": 27,
+        "isProgrammer": true
+      },
+      {
+        "name": "David",
+        "age": 26,
+        "isProgrammer": false
+      }
+    ]
   }
 ]
