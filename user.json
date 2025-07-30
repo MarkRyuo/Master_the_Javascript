@@ -1,0 +1,25 @@
+[
+  {
+    "key": "user_id",
+    "name": "Jhon Mark",
+    "age": 22,
+    "isProgrammer": true,
+    "skills": [
+      "JavaScript",
+      "React",
+      "Node.js"
+    ],
+    "friends": [
+      {
+        "name": "Alice",
+        "age": 23,
+        "isProgrammer": false
+      },
+      {
+        "name": "Bob",
+        "age": 24,
+        "isProgrammer": true
+      }
+    ]
+  }
+]
