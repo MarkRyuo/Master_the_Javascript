@@ -1,6 +1,18 @@
 {
   "usersId": "001", 
   "userAge": 30,
-  "userName": "Jhon Mark Malupa",
-  "userPasswordHash": "encryptedPassword"  
+  "userName": "Admin",
+  "userPasswordHash": "encryptedPassword",
+  "createdAt": "2025-07-31T09:00:00Z",
+  "updatedAt": "2025-07-31T10:15:00Z",
+  "userProfile": {
+    "fullname": "Jhon Mark Malupa",
+    "gender": "Male",
+    "email": "malupajhonmark3035@gmail.com"
+  },
+  "roles": {
+    "isAdmin": true,
+    "isVerified": true,
+    "isBanned": false
+  }
 }
