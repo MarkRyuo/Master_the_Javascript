@@ -1,8 +1,10 @@
 import './style.css'
+import { setupclick } from './clickme';
 
 document.querySelector('#app').innerHTML = `
   <div class="container">
-    <h1> Hello World </h1>
+    <button type="button" id="clkme">Click me</button>
   </div>
 `
 
+functclickme(document.getElementById("clkme"))
