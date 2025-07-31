@@ -1,48 +1,6 @@
-[
-  {
-    "key": "user_id",
-    "name": "Jhon Mark",
-    "age": 22,
-    "isProgrammer": true,
-    "skills": [
-      "JavaScript",
-      "React",
-      "Node.js"
-    ],
-    "friends": [
-      {
-        "name": "Alice",
-        "age": 23,
-        "isProgrammer": false
-      },
-      {
-        "name": "Bob",
-        "age": 24,
-        "isProgrammer": true
-      }
-    ]
-  },
-  {
-    "key": "user_id_2",
-    "name": "Jane Doe",
-    "age": 28,
-    "isProgrammer": true,
-    "skills": [
-      "Python",
-      "Django",
-      "Machine Learning"
-    ],
-    "friends": [
-      {
-        "name": "Charlie",
-        "age": 27,
-        "isProgrammer": true
-      },
-      {
-        "name": "David",
-        "age": 26,
-        "isProgrammer": false
-      }
-    ]
-  }
-]
+{
+  "usersId": "001", 
+  "userAge": 30,
+  "userName": "Jhon Mark Malupa",
+  "userPasswordHash": "encryptedPassword"  
+}
