@@ -16,7 +16,6 @@ export async function Dragonball() {
         const dragonballImg = document.getElementById("dragonballImg");
         
         dragonballImg.src = dragonballChar ;
-
         dragonballImg.style.display = "Block";
 
     } catch (error) {
