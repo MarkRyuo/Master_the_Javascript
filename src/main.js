@@ -5,16 +5,16 @@ import './style.css';
 
 document.querySelector('#app').innerHTML = `
   <div class="container">
-    <input type="email" name="email" placeholder="your@email.com" required id="email" size="30">
-    <input type="password" name="password" placeholder="your password" required id="password" size="20">
-    <button type="button" name="login" autofocus id="login">
-	    Login
-    </button>
+    <input type="text" placeholder="Enter pokemon name" required id="pokemonName" size="30">
+    <button type="button" autofocus id="btnfetch">
+	    fetch data
+    </button> <br>
+
+    <img src="" alt="Pokemon Photo" id="pokemonImg">
     </div>
 `
 
-const inputEmail = document.getElementById("email");
-const inputPassword = document.getElementById("password");
 
 //CheckEmail()
-Pokemon()
+
+document.getElementById("btnfetch").addEventListener("click", Pokemon);
