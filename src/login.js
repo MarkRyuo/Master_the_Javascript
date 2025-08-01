@@ -3,7 +3,7 @@ export async function Login() {
     
     try {
 
-        const response = await fetch("src/user.json")
+        const response = await fetch("../user.json");
 
         if(!response.ok){
             throw new Error("Could not fetch data")
