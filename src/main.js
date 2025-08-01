@@ -1,4 +1,5 @@
-import './style.css'
+import { CheckEmail } from './email';
+import './style.css';
 
 document.querySelector('#app').innerHTML = `
   <div class="container">
@@ -12,3 +13,5 @@ document.querySelector('#app').innerHTML = `
 
 const inputEmail = document.getElementById("email");
 const inputPassword = document.getElementById("password");
+
+CheckEmail()
