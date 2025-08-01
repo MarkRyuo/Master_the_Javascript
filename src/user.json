@@ -1,0 +1,15 @@
+{
+    "userId": "001",
+    "userName": "admin",
+    "userPasswordHash": "encryptedPassword123",
+    "userPersonalProfile": {
+        "fullname": "Jhon Mark", 
+        "email": "malupajhonmark3035@gmail.com",
+        "age": 22
+    },
+    "roles": {
+        "isAdmin": true,
+        "isbanned": false
+    }
+
+}
