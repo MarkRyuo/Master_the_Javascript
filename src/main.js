@@ -1,4 +1,6 @@
 import { CheckEmail } from './email';
+import { Pokemon } from './Pokemon';
+
 import './style.css';
 
 document.querySelector('#app').innerHTML = `
@@ -14,4 +16,5 @@ document.querySelector('#app').innerHTML = `
 const inputEmail = document.getElementById("email");
 const inputPassword = document.getElementById("password");
 
-CheckEmail()
+//CheckEmail()
+Pokemon()
