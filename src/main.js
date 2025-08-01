@@ -5,6 +5,3 @@ document.querySelector('#app').innerHTML = `
     </div>
 `
 
-
-//CheckEmail()
-
