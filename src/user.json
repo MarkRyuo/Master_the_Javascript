@@ -5,7 +5,8 @@
     "userPersonalProfile": {
         "fullname": "Jhon Mark Malupa", 
         "email": "malupajhonmark3035@gmail.com",
-        "age": 22
+        "age": 22,
+        "image": "https://ph.pinterest.com/pin/629800329179180565/"
     },
     "roles": {
         "isAdmin": true,
