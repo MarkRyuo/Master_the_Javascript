@@ -9,3 +9,7 @@ document.querySelector('#app').innerHTML = `
     </button>
     </div>
 `
+
+const inputEmail = document.getElementById("email");
+const inputPassword = document.getElementById("password");
+
