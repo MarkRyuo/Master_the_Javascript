@@ -12,4 +12,3 @@ document.querySelector('#app').innerHTML = `
 
 const inputEmail = document.getElementById("email");
 const inputPassword = document.getElementById("password");
-
