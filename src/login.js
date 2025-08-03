@@ -4,7 +4,7 @@ export async function Login() {
     try {
 
         const inputEmail = document.getElementById("inputEmail").value;
-        const response = await fetch(`../user.json/${inputEmail}`);
+        const response = await fetch("./user.json");
 
         if(!response.ok){
             throw new Error("Could not fetch data")
@@ -12,7 +12,9 @@ export async function Login() {
 
         const data = await response.json()
         
-        inputEmail = data.userPersonalProfile.email
+        if (inputEmail === data.userPersonalProfile.email) {
+            console.log("Your Online")
+        }
         
     } catch (error) {
         console.error(error)

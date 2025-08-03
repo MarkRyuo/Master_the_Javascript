@@ -1,18 +1,16 @@
 {
-  "usersId": "001", 
-  "userAge": 30,
-  "userName": "Admin",
-  "userPasswordHash": "encryptedPassword",
-  "createdAt": "2025-07-31T09:00:00Z",
-  "updatedAt": "2025-07-31T10:15:00Z",
-  "userProfile": {
-    "fullname": "Jhon Mark Malupa",
-    "gender": "Male",
-    "email": "malupajhonmark3035@gmail.com"
-  },
-  "roles": {
-    "isAdmin": true,
-    "isVerified": true,
-    "isBanned": false
-  }
+    "userId": "001",
+    "userName": "admin",
+    "userPasswordHash": "encryptedPassword123",
+    "userPersonalProfile": {
+        "fullname": "Jhon Mark Malupa", 
+        "email": "malupajhonmark3035@gmail.com",
+        "age": 22,
+        "image": "https://ph.pinterest.com/pin/629800329179180565/"
+    },
+    "roles": {
+        "isAdmin": true,
+        "isbanned": false
+    }
+
 }
