@@ -19,7 +19,7 @@ export async function Login() {
             }
         }
 
-        //* Create callback 
+        //* Create callback
 
         const getData =  async (callback) => {
             const data = await getResponse()
