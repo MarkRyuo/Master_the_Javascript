@@ -13,5 +13,5 @@ document.querySelector('#app').innerHTML = `
   </div>
 `
 
-Login()
+document.getElementById("btnLogin").addEventListener("click", Login)
 

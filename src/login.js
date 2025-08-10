@@ -28,10 +28,14 @@ export async function Login() {
             //* add localStorage - setItem()
             if(inptUsername.value === data.userName){
                 localStorage.setItem("username", JSON.stringify(inptUsername.value))
-                
+                getResponse()
+            } else {
+                window.alert(`Username is not found! ${inptUsername.value}`)
             }
 
         } 
+
+        getData(getResponse);
 
 
         
