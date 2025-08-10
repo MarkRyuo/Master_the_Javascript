@@ -1,4 +1,5 @@
 import './style.css';
+import { Login } from './login.js'
 
 document.querySelector('#app').innerHTML = `
   <div class="container">
@@ -11,4 +12,6 @@ document.querySelector('#app').innerHTML = `
     </form>
   </div>
 `
+
+Login()
 
