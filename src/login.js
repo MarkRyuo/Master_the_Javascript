@@ -28,6 +28,7 @@ export async function Login() {
             //* add localStorage - setItem()
             if(inptUsername.value === data.userName){
                 localStorage.setItem("username", JSON.stringify(inptUsername.value))
+                window.alert(`Welcome ${data.userPersonalProfile.fullname}`)
                 getResponse()
             } else {
                 window.alert(`Username is not found! ${inptUsername.value}`)
