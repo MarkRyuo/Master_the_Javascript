@@ -12,6 +12,7 @@ export async function Login() {
             const response = await fetch("./user.json"); //* fetch the data
             console.log(response);
 
+            // guard clause 
             if(response.ok){
                 return response.json();
             }else {
@@ -25,13 +26,14 @@ export async function Login() {
             const data = await getResponse()
             console.log(data)
 
-            //* add localStorage - setItem()
-            if(inptUsername.value === data.userName){
+            //* add localStorage if true - setItem()
+            if(inptUsername.value === data.userName && inptPassword === data.userPasswordHash){
                 localStorage.setItem("username", JSON.stringify(inptUsername.value))
+                localStorage.setItem("password", JSON.stringify(inptPassword.value))
                 window.alert(`Welcome ${data.userPersonalProfile.fullname}`)
                 getResponse()
             } else {
-                window.alert(`Username is not found! ${inptUsername.value}`)
+                window.alert(`User is not found! ${inptUsername.value}`)
             }
 
         } 
