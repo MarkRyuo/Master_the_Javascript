@@ -36,6 +36,14 @@ export async function Login() {
                 window.alert(`User is not found! ${inptUsername.value}`)
             }
 
+            // get auto add username if have localstorage have username
+            const getLocalstorageUsername = localStorage.getItem("username");
+            
+            if(getLocalstorageUsername) {
+                inptUsername.value = getLocalstorageUsername;
+            }
+
+
         } 
 
         getData(getResponse);
