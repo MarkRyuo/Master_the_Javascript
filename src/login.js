@@ -28,8 +28,8 @@ export async function Login() {
 
             //* add localStorage if true - setItem()
             if(inptUsername.value === data.userName && inptPassword.value === data.userPasswordHash){
-                localStorage.setItem("username", JSON.stringify(inptUsername.value))
-                localStorage.setItem("password", JSON.stringify(inptPassword.value))
+                localStorage.setItem("username", inptUsername.value)
+                localStorage.setItem("password", inptPassword.value)
                 getResponse()
                 window.alert(`Welcome ${data.userPersonalProfile.fullname}`)
             } else {
