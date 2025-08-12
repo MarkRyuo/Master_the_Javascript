@@ -1,7 +1,7 @@
 {
     "userId": "001",
     "userName": "admin",
-    "userPasswordHash": "encryptedPassword123",
+    "userPasswordHash": "encrypted123",
     "userPersonalProfile": {
         "fullname": "Jhon Mark Malupa", 
         "email": "malupajhonmark3035@gmail.com",

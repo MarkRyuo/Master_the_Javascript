@@ -27,11 +27,11 @@ export async function Login() {
             console.log(data)
 
             //* add localStorage if true - setItem()
-            if(inptUsername.value === data.userName && inptPassword === data.userPasswordHash){
+            if(inptUsername.value === data.userName && inptPassword.value === data.userPasswordHash){
                 localStorage.setItem("username", JSON.stringify(inptUsername.value))
                 localStorage.setItem("password", JSON.stringify(inptPassword.value))
-                window.alert(`Welcome ${data.userPersonalProfile.fullname}`)
                 getResponse()
+                window.alert(`Welcome ${data.userPersonalProfile.fullname}`)
             } else {
                 window.alert(`User is not found! ${inptUsername.value}`)
             }
