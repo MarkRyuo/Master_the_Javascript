@@ -9,7 +9,7 @@ export async function Login() {
         
         const getResponse = async () => {
 
-            const response = await fetch("./user.json", {
+            const response = await fetch("http://localhost:5173/users", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
