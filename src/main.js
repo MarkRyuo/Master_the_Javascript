@@ -1,5 +1,6 @@
 import "./style.css";
 import { Login } from "./login.js";
+import { LoginPUSH } from "./loginPUSH.js";
 
 document.querySelector("#app").innerHTML = `
   <div class="container">
@@ -25,3 +26,5 @@ window.addEventListener("load", () => {
 });
 
 //console.dir(document); // log the dom events
+
+LoginPUSH()

@@ -23,14 +23,14 @@ export async function Login() {
         //* Create callback
 
         const getData =  async (callback) => {
-            const data = await getResponse()
+            const data = await callback()
             console.log(data)
 
             //* add localStorage if true - setItem()
             if(inptUsername.value === data.userName && inptPassword.value === data.userPasswordHash){
                 localStorage.setItem("username", inptUsername.value)
                 localStorage.setItem("password", inptPassword.value)
-                getResponse()
+                callback()
                 window.alert(`Welcome ${data.userPersonalProfile.fullname}`)
             } else {
                 window.alert(`User is not found! ${inptUsername.value}`)
@@ -48,8 +48,6 @@ export async function Login() {
 
         getData(getResponse);
 
-
-        
     } catch (error) {
         console.error(error, "Something Wrong")
     }
