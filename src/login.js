@@ -23,10 +23,13 @@ export async function Login() {
         //* Create callback() - 
         const getData =  async (callback) => {
             const data = await callback() ;
-            console.log(data)
+            
+
+            //* find user && localStorage 
+            const finduser = data.user.find((user) => user.username === inptUsername.value && user.userPasswordHash === inptPassword.value)
 
             //* add localStorage if true - setItem()
-            if(inptUsername.value === data.userName && inptPassword.value === data.userPasswordHash){
+            if(finduser){
                 localStorage.setItem("username", inptUsername.value)
                 localStorage.setItem("password", inptPassword.value)
                 callback()
@@ -34,15 +37,7 @@ export async function Login() {
             } else {
                 window.alert(`User is not found! ${inptUsername.value}`)
             }
-
-            // get auto add username if have localstorage have username
-            const getLocalstorageUsername = localStorage.getItem("username");
-            
-            if(getLocalstorageUsername) {
-                inptUsername.value = getLocalstorageUsername;
-            }
-
-
+    
         } 
 
         getData(getResponse);
