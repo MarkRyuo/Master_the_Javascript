@@ -25,21 +25,21 @@ export async function Login() {
             const data = await callback() ;
             
 
-            //* find user && localStorage 
-            const finduser = data.user.find((user) => user.username === inptUsername.value && user.userPasswordHash === inptPassword.value)
+            //* find user 
+            const finduser = data.users.find((user) => user.userName === inptUsername.value && user.userPasswordHash === inptPassword.value)
 
             //* add localStorage if true - setItem()
             if(finduser){
                 localStorage.setItem("username", inptUsername.value)
                 localStorage.setItem("password", inptPassword.value)
-                callback()
-                window.alert(`Welcome ${data.userPersonalProfile.fullname}`)
+                window.alert(`Welcome ${finduser.userPersonalProfile.fullname}`)
             } else {
-                window.alert(`User is not found! ${inptUsername.value}`)
+                //!window.alert(`User is not found! ${inptUsername.value}`)
             }
     
         } 
 
+        //example of callback - run getData bago yung getResponse
         getData(getResponse);
 
     } catch (error) {
