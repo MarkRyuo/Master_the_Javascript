@@ -23,7 +23,7 @@ export async function Login() {
         //* Create callback
 
         const getData =  async (callback) => {
-            const data = await callback()
+            const data = await callback() ;
             console.log(data)
 
             //* add localStorage if true - setItem()
