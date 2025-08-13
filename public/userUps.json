@@ -1,0 +1,35 @@
+{
+    "users" : [
+        {
+            "id": "001",
+            "username": "admin",
+            "userPasswordHash": "encrypted123",
+            "userProfile": {
+                "fullname": "Jhon Mark Malupa", 
+                "email": "malupajhonmark3035@gmail.com",
+                "age": 22,
+                "image": "src/Image01.jpg"
+            },
+            "roles": {
+                "isAdmin": true,
+                "isbanned": false
+            }
+        },
+
+        {
+            "id": "002",
+            "username": "guest",
+            "userPasswordHash": "guest123",
+            "userProfile": {
+                "fullname": "Guest User", 
+                "email": "guest@gmail.com",
+                "age": 19,
+                "image": null
+            }, 
+            "roles": {
+                "isAdmin": false,
+                "isbanned": false
+            }
+        }
+    ]
+}
