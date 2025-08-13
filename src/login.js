@@ -9,7 +9,12 @@ export async function Login() {
         
         const getResponse = async () => {
 
-            const response = await fetch("./user.json"); //* fetch the data
+            const response = await fetch("./user.json", {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }); //* fetch the data
             console.log(response);
 
             // guard clause 
