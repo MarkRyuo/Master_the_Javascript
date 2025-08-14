@@ -9,7 +9,7 @@ export async function Login() {
         
         const getResponse = async () => {
 
-            const response = await fetch("http://localhost:5173/users", {
+            const response = await fetch("http://localhost:3000/users", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
@@ -31,7 +31,7 @@ export async function Login() {
             
 
             //* find user 
-            const finduser = data.users.find((user) => user.userName === inptUsername.value && user.userPasswordHash === inptPassword.value)
+            const finduser = data.find((user) => user.userName === inptUsername.value && user.userPasswordHash === inptPassword.value)
 
             //* add localStorage if true - setItem()
             if(finduser){

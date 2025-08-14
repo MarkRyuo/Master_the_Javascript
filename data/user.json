@@ -1,23 +1,27 @@
 {
-    "users" : [
-        {
-            "userId": "001",
-            "userName": "admin",
-            "userPasswordHash": "encrypted123",
-            "userPersonalProfile": {
-                "fullname": "Jhon Mark Malupa", 
-                "email": "malupajhonmark3035@gmail.com",
-                "age": 22,
-                "image": "src/Image01.jpg"
-            },
-            "roles": {
-                "isAdmin": true,
-                "isbanned": false
-            }
-        },
-
-        {
-            "userId": "002"
-        }
-    ]
+  "users": [
+    {
+      "userId": "001",
+      "userName": "admin",
+      "userPasswordHash": "encrypted123",
+      "userPersonalProfile": {
+        "fullname": "Jhon Mark Malupa",
+        "email": "malupajhonmark3035@gmail.com",
+        "age": 22,
+        "image": "src/Image01.jpg"
+      },
+      "roles": {
+        "isAdmin": true,
+        "isbanned": false
+      },
+      "id": "62aa"
+    },
+    {
+      "userId": "002",
+      "id": "c6e4"
+    },
+    {
+      "id": "a318"
+    }
+  ]
 }
